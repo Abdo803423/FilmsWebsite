@@ -1,0 +1,43 @@
+span{
+    color: red;
+
+}
+h1{
+    padding: 10px;
+    margin: 10px;
+    color: #fff;
+}
+.header{
+    display: block;
+    box-shadow: 2px 2px 4px red ;
+    background-color: #181818;
+    width: 100%;
+}
+body{
+    display:flexbox;
+    justify-items: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow-x: hidden;
+    background-color: black;
+}
+.container{
+    columns: 3;
+    gap: 20px;
+    padding: 50px 100px ;
+}
+.container img{
+    margin-top: 10px;
+    width: 100%;
+    height: auto;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    transition: .3s ease;
+    box-shadow: 3px 3px 5px red;
+}
+.container img:hover{
+scale: 1.05;
+}
+.container:has(img:hover) img:not(:hover){
+    filter: blur(10px);
+}
